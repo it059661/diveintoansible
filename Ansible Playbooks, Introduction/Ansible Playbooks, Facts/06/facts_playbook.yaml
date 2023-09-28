@@ -21,7 +21,7 @@
 
     - name: Copy Fact 1
       copy:
-        src: facts.d/getdate1.fact
+        src: templates/getdate1.fact
         dest: /home/ansible/facts.d/getdate1.fact
         owner: ansible
         mode: 0755

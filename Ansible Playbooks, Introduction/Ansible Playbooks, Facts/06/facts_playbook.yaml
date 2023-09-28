@@ -30,7 +30,7 @@
       copy:
         src: templates/getdate2.fact
         dest: /home/ansible/facts.d/getdate2.fact
-        owner: ansible
+        owner: root
         mode: 0755
 
     - name: Reload Facts

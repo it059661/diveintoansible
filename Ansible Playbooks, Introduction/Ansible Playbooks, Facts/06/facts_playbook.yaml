@@ -17,13 +17,13 @@
         path: /home/ansible/facts.d
         recurse: yes
         state: directory
-        owner: ansible
+        owner: root
 
     - name: Copy Fact 1
       copy:
         src: templates/getdate1.fact
         dest: /home/ansible/facts.d/getdate1.fact
-        owner: ansible
+        owner: root
         mode: 0755
 
     - name: Copy Fact 2

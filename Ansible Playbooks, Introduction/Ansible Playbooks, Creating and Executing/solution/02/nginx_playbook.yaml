@@ -34,6 +34,11 @@
         state: latest
       when: ansible_distribution == 'Rocky'
 
+    - name: Restart nginx
+      service:
+        name: nginx
+        state: restarted     
+
   # Handlers: the list of handlers that are executed as a notify key from a task
 
 # Three dots indicate the end of a YAML document

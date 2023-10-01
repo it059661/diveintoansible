@@ -6,7 +6,7 @@
 -
 
   # Hosts: where our play will run and options it will run with
-  hosts: ubuntu3,centos3
+  hosts: all
 
   # Tasks: the list of tasks that will be executed within the play, this section
   # can also be used for pre and post tasks
@@ -23,7 +23,7 @@
         webserver_application_port: 8080
         webserver_application_path: /var/www/html
         webserver_application_user: nginx
-      when: ansible_distribution == 'Ubuntu'
+      when: ansible_distribution == 'Rocky'
 
     - name: Show pre-set distribution based facts
       debug:

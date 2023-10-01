@@ -18,7 +18,7 @@
         name: epel-release
         update_cache: yes
         state: latest
-      when: ansible_distribution == 'Rocky Linux'
+      when: ansible_distribution == 'Rocky'
 
   # Handlers: the list of handlers that are executed as a notify key from a task
 

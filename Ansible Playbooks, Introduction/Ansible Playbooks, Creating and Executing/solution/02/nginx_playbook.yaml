@@ -27,12 +27,12 @@
         state: latest
       when: ansible_distribution == 'CentOS'
 
-    - name: Install Nginx Ubuntu
+    - name: Install Nginx Rocky
       apt:
         name: nginx
         update_cache: yes
         state: latest
-      when: ansible_distribution == 'Ubuntu'
+      when: ansible_distribution == 'Rocky'
 
   # Handlers: the list of handlers that are executed as a notify key from a task
 
